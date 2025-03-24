@@ -93,25 +93,35 @@
           </tr>
         </table>
     </section>
+      <br>
     <section id="forma">
-    <p>
-        <form>
-            <label for="pidgrup">Підгрупа</label>
-            <select id="pidgrup" name="pidgrup">
-                <option value="1">Підгрупа 1</option>
-                <option value="2">Підгрупа 2</option>
-            </select><br>
-            <label for="brigada">Бригада</label>
-            <select id="brigada" name="brigada">
-                <option value="1">1. Бригада</option>
-                <option value="2">2. Бригада</option>
-            </select><br>
-            <label for="prizvishe">Прізвище</label>
-            <input type="text" id="prizvishe" name="prizvishe"><br>
-            <label for="imya">Ім'я</label>
-            <input type="text" id="imya" name="imya"><br>
-            <button type="submit">Додати студента</button>
-        </form>
-    </p>  
+
+			<form action="" method="get" class="form-example">
+			<div class="form-example">
+			<label for="name">Введіть своє ім'я: </label>
+			<input type="text" name="name" id="name" required />
+			</div>
+				<div class="form-example">
+					<label for="email">Введіть свою почту: </label>
+					<input type="email" name="email" id="email" required />
+			</div>
+				<div class="form-example">
+					<label for="email">Введіть свій номер телефону: </label>
+					<input type="tel" id="telefon" name="telefon" placeholder="+380XXXXXXXXX" pattern="[0-9\+\s\-\(\)]{9,15}" title="Будь ласка, введіть дійсний номер телефону.">
+
+  </div>
+  <div>
+    <label for="опис">Короткий опис:</label><br>
+    <textarea id="опис" name="опис" style="width: 100px; height: 100px;">
+      Введіть ваш короткий опис тут...
+    </textarea><br><br>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Додати">
+  <input type="reset" value="Скинути" style="margin-left: 15px;">
+  </div>
+</form>
+
+ 
 </body>
 </html>
